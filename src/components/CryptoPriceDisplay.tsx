@@ -8,8 +8,6 @@ export default function CryptoPriceDisplay() {
     const loading = useCryptoStore((state) => state.loading)
 
     const hasResult = useMemo(() => !Object.values(result).includes(''), [result])
-    console.log(hasResult);
-    console.log(result);
 
     return (
         <div className='result-wraper'>
